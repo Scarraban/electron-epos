@@ -7,8 +7,7 @@ console.log(__dirname);
 
 app.on('ready', () => {
   MainWindow = new BrowserWindow({
-    height: 600,
-    width: 800
+    fullscreen: true
   });
   MainWindow.loadURL(`file://${__dirname}/src/index.html`);
 });
